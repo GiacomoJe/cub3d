@@ -1,0 +1,180 @@
+
+ █████╗ ██████╗      ██╗███████╗████████╗██╗██╗   ██╗ █████╗  ██████╗
+██╔══██╗██╔══██╗     ██║██╔════╝╚══██╔══╝██║██║   ██║██╔══██╗██╔════╝
+██║  ██║██████╦╝     ██║█████╗     ██║   ██║╚██╗ ██╔╝██║  ██║╚█████╗ 
+██║  ██║██╔══██╗██╗  ██║██╔══╝     ██║   ██║ ╚████╔╝ ██║  ██║ ╚═══██╗
+╚█████╔╝██████╦╝╚█████╔╝███████╗   ██║   ██║  ╚██╔╝  ╚█████╔╝██████╔╝
+ ╚════╝ ╚═════╝  ╚════╝ ╚══════╝   ╚═╝   ╚═╝   ╚═╝    ╚════╝ ╚═════╝ 
+
+Os objetivos deste projeto são semelhantes a todos os objetivos deste primeiro ano: Rigor, uso de C, uso de algoritmos básicos, pesquisa de informação etc.
+Como projeto de design gráfico, cub3D permitirá que você aprimore suas habilidades nas seguintes áreas: janelas, cores, eventos, preenchimento de formas, etc.
+Para concluir, o cub3D é um playground notável para explorar as aplicações práticas lúdicas da matemática sem ter que entender os detalhes.
+Com a ajuda dos inúmeros documentos disponíveis na internet, você utilizará a matemática como ferramenta para criar algoritmos elegantes e eficientes.
+
+
+██╗███╗  ██╗ ██████╗████████╗██████╗ ██╗   ██╗ █████╗  █████╗ ███████╗ ██████╗
+██║████╗ ██║██╔════╝╚══██╔══╝██╔══██╗██║   ██║██╔══██╗██╔══██╗██╔════╝██╔════╝
+██║██╔██╗██║╚█████╗    ██║   ██████╔╝██║   ██║██║  ╚═╝██║  ██║█████╗  ╚█████╗ 
+██║██║╚████║ ╚═══██╗   ██║   ██╔══██╗██║   ██║██║  ██╗██║  ██║██╔══╝   ╚═══██╗
+██║██║ ╚███║██████╔╝   ██║   ██║  ██║╚██████╔╝╚█████╔╝╚█████╔╝███████╗██████╔╝
+╚═╝╚═╝  ╚══╝╚═════╝    ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚════╝  ╚════╝ ╚══════╝╚═════╝ 
+
+			 ████╗  █████╗ ███╗   ███╗██╗   ██╗███╗  ██╗ ██████╗
+			██╔══██╗██╔══██╗████╗ ████║██║   ██║████╗ ██║██╔════╝
+			██║  ╚═╝██║  ██║██╔████╔██║██║   ██║██╔██╗██║╚█████╗ 
+			██║  ██╗██║  ██║██║╚██╔╝██║██║   ██║██║╚████║ ╚═══██╗
+			╚█████╔╝╚█████╔╝██║ ╚═╝ ██║╚██████╔╝██║ ╚███║██████╔╝
+			╚════╝  ╚════╝ ╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚══╝╚═════╝ 
+
+
+• Seu projeto deve ser escrito em C.
+• Seu projeto deverá ser escrito de acordo com a Norma. Se você tiver arquivos/funções bônus, eles serão incluídos na verificação de norma e você receberá 0 se houver um erro de norma.
+• Suas funções não devem encerrar inesperadamente (falha de segmentação, erro de barramento, liberação dupla, etc.) além de comportamentos indefinidos. Caso isso aconteça, seu projeto será considerado não funcional e receberá nota 0 na avaliação.
+• Todo o espaço de memória alocado no heap deve ser liberado adequadamente quando necessário. Nenhum vazamento será tolerado.
+• Se o assunto exigir, você deve enviar um Makefile que irá compilar seus arquivos fonte para a saída necessária com as flags -Wall, -Wextra e -Werror, use cc, e seu Makefile não deve relinkar.
+• Seu Makefile deve conter pelo menos as regras $(NAME), all, clean, fclean e re.
+• Para entregar bônus ao seu projeto, você deve incluir uma regra bônus em seu Makefile, que adicionará todos os diversos cabeçalhos, bibliotecas ou funções que são proibidas na parte principal do projeto. Os bônus devem estar em um arquivo diferente _bonus.{c/h} se o assunto não especificar mais nada. A avaliação da parte obrigatória e da parte bônus é feita separadamente.
+• Se o seu projeto permitir que você use sua libft, você deve copiar seus fontes e seu Makefile associado em uma pasta libft com seu Makefile associado. O Makefile do seu projeto deve compilar a biblioteca usando seu Makefile e depois compilar o projeto.
+• Incentivamos você a criar programas de teste para o seu projeto, mesmo que esse trabalho não precise ser enviado e não receba nota. Isso lhe dará a chance de testar facilmente seu trabalho e o trabalho de seus colegas. Você achará esses testes especialmente úteis durante sua defesa. Na verdade, durante a defesa, você é livre para usar seus testes e/ou os testes do colega que está avaliando.
+• Envie seu trabalho para o repositório git designado. Somente o trabalho no repositório git será avaliado. Se o Deepthought for designado para avaliar seu trabalho, isso será feito após as avaliações dos colegas. Se ocorrer um erro em qualquer seção do seu trabalho durante a avaliação do Deepthought, a avaliação será interrompida.
+
+
+
+██████╗  █████╗ ██████╗ ████████╗███████╗
+██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+██████╔╝███████║██████╔╝   ██║   █████╗  
+██╔═══╝ ██╔══██║██╔══██╗   ██║   ██╔══╝  
+██║     ██║  ██║██║  ██║   ██║   ███████╗
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝
+
+			 █████╗ ██████╗ ██████╗ ██╗ ██████╗  █████╗ ████████╗ █████╗ ██████╗ ██╗ █████╗ 
+			██╔══██╗██╔══██╗██╔══██╗██║██╔════╝ ██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗██║██╔══██╗
+			██║  ██║██████╦╝██████╔╝██║██║  ██╗ ███████║   ██║   ██║  ██║██████╔╝██║███████║
+			██║  ██║██╔══██╗██╔══██╗██║██║  ╚██╗██╔══██║   ██║   ██║  ██║██╔══██╗██║██╔══██║
+			╚█████╔╝██████╦╝██║  ██║██║╚██████╔╝██║  ██║   ██║   ╚█████╔╝██║  ██║██║██║  ██║
+			 ╚════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝
+
+
+╔═══════════════════════════════════════════════════════════════════════════════════╗
+║                                       Cub3d                                       ║
+╠═══════════════════╦═══════════════════════════════════════════════════════════════╣
+║ Nome do programa  ║                             cub3D                             ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║ Entregar arquivos ║ Todos os seus arquivos                                        ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║ Makefile          ║ all, clean, fclean, re, bonus                                 ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║ Argumentos        ║ um mapa no formato *.cub                                      ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║                   ║ • open, close, read, write, printf, malloc, free, perror,     ║
+║                   ║ strerror, exit                                                ║
+║                   ╠═══════════════════════════════════════════════════════════════╣
+║ Funções externas. ║ • Todas as funções da biblioteca math (-lm man man 3 math)    ║
+║                   ╠═══════════════════════════════════════════════════════════════╣
+║                   ║ • Todas as funções do MinilibX                                ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║ Libft autorizado  ║ Sim                                                           ║
+╠═══════════════════╬═══════════════════════════════════════════════════════════════╣
+║ Descrição         ║ Você deve criar uma representação gráfica 3D “realista” do    ║
+║                   ║ interior de um labirinto a partir de uma perspectiva          ║
+║                   ║ de primeira pessoa. Você deve criar esta representação usando ║
+║                   ║  os princípios de Ray-Casting mencionados anteriormente.      ║
+╚═══════════════════╩═══════════════════════════════════════════════════════════════╝
+
+As restrições são as seguintes:
+	• Você deve usar a miniLibX. A versão disponível no sistema operacional ou em suas fontes. Se você optar por trabalhar com as fontes, precisará aplicar as mesmas regras para o seu libft que foram escritas acima na parte das Instruções Comuns.
+	• A gestão da sua janela deve permanecer tranquila: mudar para outra janela, minimizar, etc.
+	• Exiba diferentes texturas de parede (a escolha é sua) que variam dependendo do lado da parede (Norte, Sul, Leste, Oeste).
+	• Seu programa deve ser capaz de definir as cores do piso e do teto para duas cores diferentes.
+	• O programa exibe a imagem em uma janela e respeita as seguintes regras:
+		◦ As teclas de seta esquerda e direita do teclado devem permitir que você olhe para a esquerda e para a direita no labirinto.
+		◦ As teclas W, A, S e D devem permitir que você mova o ponto de vista pelo labirinto.
+		◦ Pressionar ESC deve fechar a janela e sair do programa corretamente.
+		◦ Clicar na cruz vermelha na moldura da janela deve fechar a janela e encerrar o programa de forma limpa.
+		◦ O uso de imagens do minilibX é fortemente recomendado.
+	• Seu programa deve tomar como primeiro argumento um arquivo de descrição de cena com extensão .cub.
+		◦ O mapa deve ser composto por apenas 6 caracteres possíveis: 
+			◦ 0 para um espaço vazio,
+			◦ 1 para uma parede
+			◦ N, S, E ou W para a posição inicial do jogador e orientação de desova
+		Este é um mapa simples e válido:
+			111111
+			100101
+			101001
+			1100N1
+			111111
+		◦ O mapa deve estar fechado/cercado por paredes, caso contrário o programa deverá retornar um erro.
+		◦ Exceto pelo conteúdo do mapa, cada tipo de elemento pode ser separado por uma ou mais linhas vazias.
+		◦ Exceto o conteúdo do mapa que sempre deve ser o último, cada tipo de elemento pode ser definido em qualquer ordem no arquivo.
+		◦ Exceto o mapa, cada tipo de informação de um elemento pode ser separada por um ou mais espaços.
+		◦ O mapa deve ser analisado conforme aparece no arquivo. Os espaços são uma parte válida do mapa e cabe a você administrá-los. Você deve ser capaz de analisar qualquer tipo de mapa, desde que respeite as regras do mapa.
+		◦ A primeira informação de cada elemento (exceto o mapa) é o identificador de tipo (composto por um ou dois caracteres), seguido de todas as informações específicas de cada objeto em uma ordem estrita como:
+			∗ Textura Norte:
+				· identificador: NO
+				· caminho para a textura norte = "path_to_the_north"
+					NO ./path_to_the_north
+			∗ Textura Sul:
+				· identificador: SO
+				· caminho para a textura sul = "path_to_the_south_texture"
+					SO ./path_to_the_south_texture
+			∗ Textura Oeste:
+				· identificador: WE
+				· caminho para a textura oeste = "path_to_the_west_texture"
+					WE ./path_to_the_west_texture
+			∗ Textura Leste:
+				· identificador: EA
+				· caminho para a textura leste = "path_to_the_east_texture"
+					EA ./path_to_the_east_texture
+			∗ Cor do piso:
+				· identificador: F
+				· Cores R,G,B na faixa [0,255]: 0, 255, 255
+					F 220.100,0
+			∗ Cor do teto:
+				· identificador: C
+				· Cores R,G,B na faixa [0,255]: 0, 255, 255
+					C 225,30,0
+		◦ Exemplo de parte obrigatória com cena .cub minimalista:
+			╔═══════════════════════════════════╗
+			║ NO ./path_to_the_north_texture    ║
+			║ SO ./path_to_the_south_texture    ║
+			║ WE ./path_to_the_west_texture     ║
+			║ EA ./path_to_the_east_texture     ║
+			║                                   ║
+			║ F 220,100,0                       ║
+			║ C 225,30,0                        ║
+			║                                   ║
+			║ 1111111111111111111111111         ║
+			║ 1000000000110000000000001         ║
+			║ 1011000001110000000000001         ║
+			║ 1001000000000000000000001         ║
+			║ 111111111011000001110000000000001 ║
+			║ 100000000011000001110111111111111 ║
+			║ 11110111111111011100000010001     ║
+			║ 11110111111111011101010010001     ║
+			║ 11000000110101011100000010001     ║
+			║ 10000000000000001100000010001     ║
+			║ 10000000000000001101010010001     ║
+			║ 11000001110101011111011110N0111   ║
+			║ 11110111 1110101 101111010001     ║
+			║ 11111111 1111111 111111111111     ║
+			╚═══════════════════════════════════╝
+		◦ Se qualquer tipo de configuração incorreta for encontrada no arquivo, o programa deverá sair corretamente e retornar "Erro\n" seguido por uma mensagem de erro explícita de sua escolha.
+
+
+
+██████╗  █████╗ ██████╗ ████████╗███████╗  ██████╗  █████╗ ███╗  ██╗██╗   ██╗ ██████╗
+██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝  ██╔══██╗██╔══██╗████╗ ██║██║   ██║██╔════╝
+██████╔╝███████║██████╔╝   ██║   █████╗    ██████╦╝██║  ██║██╔██╗██║██║   ██║╚█████╗ 
+██╔═══╝ ██╔══██║██╔══██╗   ██║   ██╔══╝    ██╔══██╗██║  ██║██║╚████║██║   ██║ ╚═══██╗
+██║     ██║  ██║██║  ██║   ██║   ███████╗  ██████╦╝╚█████╔╝██║ ╚███║╚██████╔╝██████╔╝
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝  ╚═════╝  ╚════╝ ╚═╝  ╚══╝ ╚═════╝ ╚═════╝ 
+
+
+Lista de bônus:
+	• Colisões de paredes.
+	• Um sistema de minimapa.
+	• Portas que podem abrir e fechar.
+	• sprite animado.
+	• Gire o ponto de vista com o mouse
+	
+Você pode usar outras funções ou adicionar símbolos no mapa para completar a parte bônus, desde que seu uso seja justificado durante sua avaliação. Você também pode modificar o formato de arquivo de cena esperado para atender às suas necessidades. Seja esperto!
